@@ -474,40 +474,7 @@ Tag: `[R]` research · `[P]` plan · `[I]` implement · `[F]` fix · `[V]` revie
 
 ---
 
-## 7. Bài học
-
-### Cho bản thân
-- **Plan kỹ trước → batch-write sau** là đòn bẩy lớn nhất. 15 phút plan = 25 phút code 15 pages. Ngược lại mất 2h loay hoay.
-- **AskUserQuestion sớm khi nghiệp vụ mơ hồ** — 3 câu 30 giây tiết kiệm 2h code nhầm.
-- **Grep verify sau refactor path** — AI có thể bỏ sót `router.push`, `href`, `basePath` (tôi bị 2 lần).
-- **Data phải derive từ source, không hardcode cross-file**.
-- **Route groups Next.js `(folder)` là convention, không phải typo** — hiểu framework quan trọng.
-
-### Cho team / sinh viên
-- Đầu tư viết `CLAUDE.md` + `development-rules.md` kỹ đầu project → AI tự nhớ quy ước, giảm ép đi ép lại.
-- Base-nova shadcn ≠ radix shadcn cổ — nhiều tutorial online lỗi thời, luôn đọc `components/ui/*.tsx` thật.
-- Figma MCP Starter có rate limit thấp → chiến lược pull metadata 1 lần + user paste screenshot khi cần rebuild.
-- Claude Opus 4.7 đặc biệt giỏi: batch-write nhiều file, refactor cross-file, sinh mock data VN realistic, extract Figma design tokens.
-
-### Điều làm khác nếu làm lại
-- Setup `npm run dev` verify browser từ sớm, không chỉ tin build pass.
-- Commit git sau mỗi phase — dễ rollback khi AI hỏng.
-- Hỏi deadline + audience ngay đầu để quyết scope (MVP 5 màn vs full 20).
-- Viết smoke test Playwright 3 flow chính — 20 phút bảo hiểm lớn.
-
----
-
-## 8. Tồn đọng
-
-**UI polish (minor):** topbar search bar, bell notification dot, wizard footer step counter, 2 dead button `/ho-so-cua-toi` và `/thong-bao`.
-
-**Scope mở rộng:** Chi tiết nhiệm vụ `[id]` page, responsive mobile, dark mode.
-
-**Production-readiness:** Auth thật (BetterAuth/NextAuth/SSO), API backend, test suite Vitest+Playwright, i18n, deploy Vercel, pixel-diff tool.
-
----
-
-## 9. Cách demo cho sếp
+## 7. Cách demo
 
 ```bash
 git clone https://github.com/lengo0951/pms.git
@@ -531,33 +498,5 @@ npm run dev         # http://localhost:3000
 
 ---
 
-## 10. Đính kèm / liên kết
-
-**Trong repo:**
-- `web/` — Next.js 15 frontend (28 routes)
-- `docs/` — Project docs (PDR, architecture, design guidelines, deployment, roadmap, AI metrics)
-- `plans/` — 2 plan dirs + 5 reports
-- [`docs/ai-coding-metrics.md`](docs/ai-coding-metrics.md) — bảng thời gian + file stats chi tiết
-
-**Plans đã execute:**
-- `plans/260418-2051-pms-vnuhcm-figma-to-nextjs/` — 11-phase initial plan
-- `plans/260418-2149-restructure-nkh-primary-admin-superuser/` — restructure plan
-
-**Reports:**
-- `plans/reports/researcher-260418-2044-figma-pms-vnuhcm-scope.md` — research Figma
-- `plans/reports/code-review-260418-2156-full-codebase.md` — code review #1
-
----
-
-## 11. Unresolved questions
-
-1. **Deadline demo + audience cụ thể?** Stakeholder VNU-HCM cần polish thêm + deploy.
-2. **Auth production:** BetterAuth / NextAuth / SSO VNU-HCM riêng?
-3. **API backend:** Ai làm? Format REST / GraphQL / tRPC?
-4. **Tab 2 & 4 wizard admin (Figma không có):** bỏ hay bổ sung design sau?
-5. **Design fidelity yêu cầu bao nhiêu?** Hiện ~90% mắt thường. Pixel-perfect cần thêm screenshot + thời gian.
-
----
-
-**Người báo cáo:** Khôi · khoi.le@nucuoimekong.vn
+**Người báo cáo:** Lê Quốc Ngô
 **Repo:** https://github.com/lengo0951/pms
