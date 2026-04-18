@@ -1,14 +1,29 @@
 export const orgProfile = {
-  name: "Tổ chức chủ trì PMS VNU-HCM",
-  code: "VNUHCM-PMS",
-  address: "Phường Linh Trung, TP. Thủ Đức, TP. Hồ Chí Minh",
+  name: "Trường ĐH Bách Khoa - ĐHQG-HCM",
+  code: "VNUHCM-BK",
+  address: "268 Lý Thường Kiệt, P.14, Q.10, TP. Hồ Chí Minh",
   representative: "PGS.TS. Nguyễn Văn A",
-  position: "Trưởng phòng KH&CN",
+  position: "Hiệu trưởng",
   phone: "(028) 3724 4270",
   email: "tcct@vnuhcm.edu.vn",
   website: "pms.vnuhcm.edu.vn",
-  foundedYear: 1995,
-  taxCode: "0302137419",
+  foundedYear: 1957,
+  taxCode: "0302140799",
+};
+
+// Thông tin tài khoản ngân hàng của tổ chức (hiển thị dashboard + lý lịch).
+export const orgBank = {
+  accountName: "Trường ĐH Bách Khoa TP. HCM",
+  accountNumber: "012345678901",
+  bank: "Vietcombank - CN TP. HCM",
+  province: "Thành phố Hồ Chí Minh",
+};
+
+// Trạng thái xác minh hồ sơ tổ chức.
+export const orgVerification = {
+  status: "verified" as const,
+  label: "Đã xác minh",
+  lastUpdated: "08/03/2026",
 };
 
 export const orgDepartments = [
