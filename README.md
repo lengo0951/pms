@@ -1,7 +1,7 @@
 # 📘 Báo cáo quy trình AI Coding — PMS VNU-HCM
 
 **Dự án:** Hệ thống Quản lý Nhiệm vụ KH&CN — ĐHQG TP. Hồ Chí Minh (frontend demo từ Figma)
-**Người thực hiện:** Khôi · khoi.le@nucuoimekong.vn
+**Người thực hiện:** Lê Quốc Ngô
 **Thời gian:** 1 session liên tục ~4.5h làm việc thuần
 **AI tool chính:** Claude Code (model `claude-opus-4-7`) + Figma MCP
 **Stack:** Next.js 15.5.15 · React 19 · TypeScript strict · Tailwind v4 · shadcn/ui (base-nova) · react-hook-form · zod · lucide-react · date-fns
